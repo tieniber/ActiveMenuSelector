@@ -5,3 +5,4 @@ test/deployment
 test/javasource
 test/resources
 test/userlib
+test/*.lock
