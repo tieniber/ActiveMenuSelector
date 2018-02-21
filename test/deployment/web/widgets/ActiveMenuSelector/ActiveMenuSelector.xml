@@ -1,0 +1,17 @@
+<widget id="ActiveMenuSelector.widget.ActiveMenuSelector" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Active Menu Selector</name>
+    <description>Dummy widget</description>
+    <icon/>
+    <properties>
+        <property key="menuWidgetName" type="string" required="false" defaultValue="">
+            <caption>Menu widget name</caption>
+            <category>Behavior</category>
+            <description>Enter the name of the navigation tree widget that this widget should be operating upon. Something like: "navigationTree1"</description>
+        </property>
+        <property key="targetItemCaption" type="string" required="false" defaultValue="">
+            <caption>Target Item Caption</caption>
+            <category>Behavior</category>
+            <description>The caption of the menu item to be made active.</description>
+        </property>        
+    </properties>
+</widget>
