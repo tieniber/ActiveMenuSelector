@@ -1,9 +1,0 @@
-﻿Buildfile: \\Mac\Home\Documents\Custom Widgets\ActiveMenuSelector\test\deployment\build_core.xml
-
-deploy:
-    [unzip] Expanding: C:\Program Files\Mendix\7.10.0\modeler\deployment.mxz into \\Mac\Home\Documents\Custom Widgets\ActiveMenuSelector\test\deployment
-
-BUILD SUCCESSFUL
-Total time: 0 seconds
-
-

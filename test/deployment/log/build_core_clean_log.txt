@@ -1,8 +1,0 @@
-﻿Buildfile: \\Mac\Home\Documents\Custom Widgets\ActiveMenuSelector\test\deployment\build_core.xml
-
-clean:
-
-BUILD SUCCESSFUL
-Total time: 0 seconds
-
-

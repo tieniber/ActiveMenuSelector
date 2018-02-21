@@ -1,1 +1,0 @@
-define(["ActiveMenuSelector/widget/ActiveMenuSelector"], {});
