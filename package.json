@@ -1,8 +1,8 @@
 {
-  "name": "mendix-widget-webpack",
-  "private": true,
-  "version": "1.0.0",
-  "description": "Sample widget in ES6 + Webpack",
+  "name": "active-menu-selector",
+  "private": false,
+  "version": "1.1.0",
+  "description": "Activates a menu/navigation item. Useful when you navigate to a page by some means other than the menu",
   "scripts": {
     "webpack": "./node_modules/.bin/webpack",
     "dev": "cross-env WEBPACK_ENV=dev gulp",

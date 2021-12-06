@@ -1,6 +1,6 @@
 <widget id="ActiveMenuSelector.widget.ActiveMenuSelector" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
     <name>Active Menu Selector</name>
-    <description>Dummy widget</description>
+    <description>Activates a menu item.</description>
     <icon/>
     <properties>
         <property key="menuWidgetName" type="string" required="false" defaultValue="">
