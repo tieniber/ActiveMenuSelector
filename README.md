@@ -1,8 +1,17 @@
-# ActiveMenuSelector
-A Mendix widget that activates/highlights the right menu item for the page you're on.
+## ActiveMenuSelector
+[My widget description]
 
-To use, simply drop on a page, and set the 2 properties
- - The name of the navigation widget
- - The caption of the menu item you want highlighted
- 
- That's it!
+## Features
+[feature highlights]
+
+## Usage
+[step by step instructions]
+
+## Demo project
+[link to sandbox]
+
+## Issues, suggestions and feature requests
+[link to GitHub issues]
+
+## Development and contribution
+[specify contribute]

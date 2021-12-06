@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.activemenuselector.ActiveMenuSelector" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Active Menu Selector</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="menuWidgetName" type="string" required="false">
+                <caption>Menu widget name</caption>
+                <description>The name of your the menu widget. Will be something like "navigationTree3"</description>
+            </property>
+            <property key="menuItemTitle" type="textTemplate" required="false">
+                <caption>Target menu title</caption>
+                <description>The title of the menu item you wish to be made active.</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
