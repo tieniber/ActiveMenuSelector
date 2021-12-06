@@ -7,3 +7,4 @@ test/resources
 test/userlib
 test/*.lock
 test/theme/styles/.sass-cache
+.DS_Store
