@@ -1,10 +1,38 @@
 import { Component, createElement } from "react";
 
 export default class ActiveMenuSelector extends Component {
+
     componentDidMount() {
+        this.activateMenu();
+    }
+
+    render() {
+        return null;
+    }
+
+    async activateMenu() {
         const { menuWidgetName, menuItemTitle } = this.props;
         //find the menu
-        const menu = document.querySelector(".mx-name-" + menuWidgetName);
+        var menu = document.querySelector(".mx-name-" + menuWidgetName);
+        
+        // Sometimes the menu hasn't loaded yet. Try 3 times to get it and then give up.
+        // Very rarely does it go beyond the first retry.
+        if (menu === null) {
+            await this.timeout(100);
+            menu = document.querySelector(".mx-name-" + menuWidgetName);
+            if (menu === null) {
+                await this.timeout(200);
+                menu = document.querySelector(".mx-name-" + menuWidgetName);
+                if (menu === null) {
+                    await this.timeout(400);
+                    menu = document.querySelector(".mx-name-" + menuWidgetName);
+                }
+            }
+        }
+        if (menu === null) {
+            console.error("ActiveMenuSelector widget could not find menu: " + menuWidgetName);
+            return;
+        }
         //remove the active state from any/all of the menu items
         if (menu.querySelector(".active") !== null) {
             const activeItems = menu.querySelectorAll(".active");
@@ -20,14 +48,15 @@ export default class ActiveMenuSelector extends Component {
         } else {
             console.error(
                 "ActiveMenuSelector widget could not find target: " +
-                    menuItemTitle.value +
-                    " in menu: " +
-                    menuWidgetName
+                menuItemTitle.value +
+                " in menu: " +
+                menuWidgetName
             );
         }
     }
 
-    render() {
-        return null;
+    timeout(delay) {
+        return new Promise(res => setTimeout(res, delay));
     }
 }
+
