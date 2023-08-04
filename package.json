@@ -1,7 +1,7 @@
 {
   "name": "activemenuselector",
   "widgetName": "ActiveMenuSelector",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "My widget description",
   "copyright": "2020 Mendix Technology BV",
   "author": "Eric Tieniber",
